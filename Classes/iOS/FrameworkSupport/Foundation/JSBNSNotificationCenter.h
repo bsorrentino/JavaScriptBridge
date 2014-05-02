@@ -21,6 +21,9 @@
 - (void)removeObserver:(id)observer name:(NSString *)aName object:(id)anObject;
 - (id)addObserverForName:(NSString *)name object:(id)obj queue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *note))block;
 
+JSExportAs(postNotificationNameInfo,
+           - (void)__postNotificationNameInfo:(NSString *)name info:(NSDictionary *)info
+           );
 #pragma clang diagnostic pop
 
 @end
