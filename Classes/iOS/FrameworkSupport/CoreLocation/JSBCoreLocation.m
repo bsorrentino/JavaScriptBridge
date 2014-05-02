@@ -35,15 +35,19 @@
     class_addProtocol([CLPlacemark class], @protocol(JSBCLPlacemark));
     context[@"CLPlacemark"] = [CLPlacemark class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([CLRegion class], @protocol(JSBCLRegion));
     context[@"CLRegion"] = [CLRegion class];
-
+#endif
+    
     class_addProtocol([CLBeaconRegion class], @protocol(JSBCLBeaconRegion));
     context[@"CLBeaconRegion"] = [CLBeaconRegion class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([CLCircularRegion class], @protocol(JSBCLCircularRegion));
     context[@"CLCircularRegion"] = [CLCircularRegion class];
-
+#endif
+    
 #pragma clang diagnostic pop
 }
 

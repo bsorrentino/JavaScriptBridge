@@ -11,9 +11,12 @@
 {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    
+#ifndef __IPHONE_7_1
     class_addProtocol([PKPass class], @protocol(JSBPKPass));
     context[@"PKPass"] = [PKPass class];
-
+#endif
+    
     class_addProtocol([PKPassLibrary class], @protocol(JSBPKPassLibrary));
     context[@"PKPassLibrary"] = [PKPassLibrary class];
 

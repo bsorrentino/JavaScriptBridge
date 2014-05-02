@@ -95,12 +95,15 @@
     class_addProtocol([MKMapSnapshotter class], @protocol(JSBMKMapSnapshotter));
     context[@"MKMapSnapshotter"] = [MKMapSnapshotter class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([MKOverlayRenderer class], @protocol(JSBMKOverlayRenderer));
     context[@"MKOverlayRenderer"] = [MKOverlayRenderer class];
-
+#endif
+    
+#ifndef __IPHONE_7_1
     class_addProtocol([MKReverseGeocoder class], @protocol(JSBMKReverseGeocoder));
     context[@"MKReverseGeocoder"] = [MKReverseGeocoder class];
-
+#endif
     class_addProtocol([MKShape class], @protocol(JSBMKShape));
     context[@"MKShape"] = [MKShape class];
 
@@ -125,15 +128,21 @@
     class_addProtocol([MKMultiPoint class], @protocol(JSBMKMultiPoint));
     context[@"MKMultiPoint"] = [MKMultiPoint class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([MKOverlayPathRenderer class], @protocol(JSBMKOverlayPathRenderer));
     context[@"MKOverlayPathRenderer"] = [MKOverlayPathRenderer class];
-
+#endif
+  
+#ifndef __IPHONE_7_1
     class_addProtocol([MKOverlayView class], @protocol(JSBMKOverlayView));
     context[@"MKOverlayView"] = [MKOverlayView class];
-
+#endif
+    
+#ifndef __IPHONE_7_1
     class_addProtocol([MKPlacemark class], @protocol(JSBMKPlacemark));
     context[@"MKPlacemark"] = [MKPlacemark class];
-
+#endif
+    
     class_addProtocol([MKPointAnnotation class], @protocol(JSBMKPointAnnotation));
     context[@"MKPointAnnotation"] = [MKPointAnnotation class];
 
@@ -146,12 +155,16 @@
     class_addProtocol([MKCircleRenderer class], @protocol(JSBMKCircleRenderer));
     context[@"MKCircleRenderer"] = [MKCircleRenderer class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([MKOverlayPathView class], @protocol(JSBMKOverlayPathView));
     context[@"MKOverlayPathView"] = [MKOverlayPathView class];
-
+#endif
+   
+#ifndef __IPHONE_7_1
     class_addProtocol([MKPinAnnotationView class], @protocol(JSBMKPinAnnotationView));
     context[@"MKPinAnnotationView"] = [MKPinAnnotationView class];
-
+#endif
+    
     class_addProtocol([MKPolygon class], @protocol(JSBMKPolygon));
     context[@"MKPolygon"] = [MKPolygon class];
 

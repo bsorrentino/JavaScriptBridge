@@ -155,9 +155,11 @@
     class_addProtocol([AVAudioPlayer class], @protocol(JSBAVAudioPlayer));
     context[@"AVAudioPlayer"] = [AVAudioPlayer class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([AVAudioRecorder class], @protocol(JSBAVAudioRecorder));
     context[@"AVAudioRecorder"] = [AVAudioRecorder class];
-
+#endif
+    
     class_addProtocol([AVAudioSessionRouteDescription class], @protocol(JSBAVAudioSessionRouteDescription));
     context[@"AVAudioSessionRouteDescription"] = [AVAudioSessionRouteDescription class];
 
