@@ -345,9 +345,11 @@
     class_addProtocol([UITextChecker class], @protocol(JSBUITextChecker));
     context[@"UITextChecker"] = [UITextChecker class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([UITextInputStringTokenizer class], @protocol(JSBUITextInputStringTokenizer));
     context[@"UITextInputStringTokenizer"] = [UITextInputStringTokenizer class];
-
+#endif
+    
     class_addProtocol([UITextSelectionRect class], @protocol(JSBUITextSelectionRect));
     context[@"UITextSelectionRect"] = [UITextSelectionRect class];
 

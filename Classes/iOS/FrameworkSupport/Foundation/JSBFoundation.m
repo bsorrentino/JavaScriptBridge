@@ -344,9 +344,11 @@
     class_addProtocol([NSValue class], @protocol(JSBNSValue));
     context[@"NSValue"] = [NSValue class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([NSRegularExpression class], @protocol(JSBNSRegularExpression));
     context[@"NSRegularExpression"] = [NSRegularExpression class];
-
+#endif
+    
     class_addProtocol([NSRunLoop class], @protocol(JSBNSRunLoop));
     context[@"NSRunLoop"] = [NSRunLoop class];
 
@@ -365,9 +367,11 @@
     class_addProtocol([NSTimeZone class], @protocol(JSBNSTimeZone));
     context[@"NSTimeZone"] = [NSTimeZone class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([NSTimer class], @protocol(JSBNSTimer));
     context[@"NSTimer"] = [NSTimer class];
-
+#endif
+    
     class_addProtocol([NSFileSecurity class], @protocol(JSBNSFileSecurity));
     context[@"NSFileSecurity"] = [NSFileSecurity class];
 
@@ -398,9 +402,11 @@
     class_addProtocol([NSURLProtectionSpace class], @protocol(JSBNSURLProtectionSpace));
     context[@"NSURLProtectionSpace"] = [NSURLProtectionSpace class];
 
+#ifndef __IPHONE_7_1
     class_addProtocol([NSURLProtocol class], @protocol(JSBNSURLProtocol));
     context[@"NSURLProtocol"] = [NSURLProtocol class];
-
+#endif
+    
     class_addProtocol([NSURLRequest class], @protocol(JSBNSURLRequest));
     context[@"NSURLRequest"] = [NSURLRequest class];
 
