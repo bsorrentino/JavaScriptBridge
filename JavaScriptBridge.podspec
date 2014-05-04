@@ -29,16 +29,28 @@ Pod::Spec.new do |s|
     #core.dependency 'ShareKit/NoARC'
    end
 
-   s.subspec 'Foundation' do |core|
-    #core.resource_bundle = {'ShareKit' => ['Classes/ShareKit/Core/SHKSharers.plist', 'Classes/ShareKit/Localization/*.lproj', 'Classes/ShareKit/*.png']}
-    core.source_files  = ['Classes/iOS/FrameworkSupport/Foundation/*.{h,m}']
-    #core.private_header_files  = ["Classes/Private/*.{h,m}"]
-    #core.exclude_files = non_arc_files
-    #core.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
-    core.dependency 'JavaScriptBridge/Core', '~> {core.version.to_s}'
-    #core.dependency 'SAMTextView', '~> 0.2.1'
-    #core.dependency 'ShareKit/Reachability'
-    #core.dependency 'ShareKit/NoARC'
+   s.subspec 'Foundation' do |foundation|
+    #foundation.resource_bundle = {'ShareKit' => ['Classes/ShareKit/Core/SHKSharers.plist', 'Classes/ShareKit/Localization/*.lproj', 'Classes/ShareKit/*.png']}
+    foundation.source_files  = ['Classes/iOS/FrameworkSupport/Foundation/*.{h,m}']
+    #foundation.private_header_files  = ["Classes/Private/*.{h,m}"]
+    #foundation.exclude_files = non_arc_files
+    #foundation.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
+    foundation.dependency 'JavaScriptBridge/Core'
+    #foundation.dependency 'SAMTextView', '~> 0.2.1'
+    #foundation.dependency 'ShareKit/Reachability'
+    #foundation.dependency 'ShareKit/NoARC'
+   end
+
+   s.subspec 'UIKit' do |uikit|
+    #uikit.resource_bundle = {'ShareKit' => ['Classes/ShareKit/Core/SHKSharers.plist', 'Classes/ShareKit/Localization/*.lproj', 'Classes/ShareKit/*.png']}
+    uikit.source_files  = ['Classes/iOS/FrameworkSupport/UIKit/*.{h,m}']
+    #uikit.private_header_files  = ["Classes/Private/*.{h,m}"]
+    #uikit.exclude_files = non_arc_files
+    #uikit.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
+    uikit.dependency 'JavaScriptBridge/Core'
+    #uikit.dependency 'SAMTextView', '~> 0.2.1'
+    #uikit.dependency 'ShareKit/Reachability'
+    #uikit.dependency 'ShareKit/NoARC'
    end
 
 end
