@@ -43,12 +43,12 @@ Pod::Spec.new do |s|
 
    s.subspec 'UIKit' do |uikit|
     #uikit.resource_bundle = {'ShareKit' => ['Classes/ShareKit/Core/SHKSharers.plist', 'Classes/ShareKit/Localization/*.lproj', 'Classes/ShareKit/*.png']}
-    uikit.source_files  = ['Classes/iOS/FrameworkSupport/UIKit/*.{h,m}']
+    uikit.source_files  = ['Classes/iOS/FrameworkSupport/UIKit/*.{h,m}', 'Classes/iOS/FrameworkSupport/CoreImage/*.{h,m}']
     #uikit.private_header_files  = ["Classes/Private/*.{h,m}"]
     #uikit.exclude_files = non_arc_files
     #uikit.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
     uikit.dependency 'JavaScriptBridge/Core'
-    #uikit.dependency 'SAMTextView', '~> 0.2.1'
+    uikit.dependency 'JavaScriptBridge/Foundation'
     #uikit.dependency 'ShareKit/Reachability'
     #uikit.dependency 'ShareKit/NoARC'
    end
