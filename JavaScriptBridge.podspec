@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     core.private_header_files  = ["Classes/Private/*.{h,m}"]
     #core.exclude_files = non_arc_files
     #core.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
-    core.dependency 'Private'
+    core.dependency 'JavaScriptBridge/Private'
     #core.dependency 'SAMTextView', '~> 0.2.1'
     #core.dependency 'ShareKit/Reachability'
     #core.dependency 'ShareKit/NoARC'
