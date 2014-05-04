@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
    s.subspec 'Core' do |core|
     #core.resource_bundle = {'ShareKit' => ['Classes/ShareKit/Core/SHKSharers.plist', 'Classes/ShareKit/Localization/*.lproj', 'Classes/ShareKit/*.png']}
-    core.source_files  = 'Classes/*.{h.m}'
+    core.source_files  = 'Classes/*.{h,m}'
     #core.exclude_files = non_arc_files
     #core.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
     #core.dependency 'SSKeychain', '~> 1.2.2'
