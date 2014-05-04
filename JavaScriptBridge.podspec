@@ -53,4 +53,16 @@ Pod::Spec.new do |s|
     #uikit.dependency 'ShareKit/NoARC'
    end
 
+   s.subspec 'QuartzCore' do |quartzcore|
+    #quartzcore.resource_bundle = {'ShareKit' => ['Classes/ShareKit/Core/SHKSharers.plist', 'Classes/ShareKit/Localization/*.lproj', 'Classes/ShareKit/*.png']}
+    quartzcore.source_files  = ['Classes/iOS/FrameworkSupport/QuartzCore/*.{h,m}']
+    #quartzcore.private_header_files  = ["Classes/Private/*.{h,m}"]
+    #quartzcore.exclude_files = non_arc_files
+    #quartzcore.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
+    quartzcore.dependency 'JavaScriptBridge/Core'
+    quartzcore.dependency 'JavaScriptBridge/Foundation'
+    #quartzcore.dependency 'ShareKit/Reachability'
+    #quartzcore.dependency 'ShareKit/NoARC'
+   end
+
 end
