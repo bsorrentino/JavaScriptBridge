@@ -306,9 +306,12 @@
     value = context[@"nsvalue"];
     XCTAssertTrue(value && !value.isUndefined);
 #endif
+    
+#ifndef __IPHONE_7_1
     [context evaluateScript:@"var nsregularexpression = NSRegularExpression.new();"];
     value = context[@"nsregularexpression"];
     XCTAssertTrue(value && !value.isUndefined);
+#endif
     
     [context evaluateScript:@"var nsrunloop = NSRunLoop.currentRunLoop();"];
     value = context[@"nsrunloop"];
@@ -389,10 +392,12 @@
     [context evaluateScript:@"var nsurlprotectionspace = NSURLProtectionSpace.alloc();"];
     value = context[@"nsurlprotectionspace"];
     XCTAssertTrue(value && !value.isUndefined);
-    
+
+#ifndef __IPHONE_7_1
     [context evaluateScript:@"var nsurlprotocol = NSURLProtocol.new();"];
     value = context[@"nsurlprotocol"];
     XCTAssertTrue(value && !value.isUndefined);
+#endif
     
     [context evaluateScript:@"var nsurlrequest = NSURLRequest.new();"];
     value = context[@"nsurlrequest"];
