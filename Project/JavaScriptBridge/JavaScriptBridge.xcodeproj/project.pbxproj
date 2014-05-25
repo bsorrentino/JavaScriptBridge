@@ -164,6 +164,7 @@
 		14A9843C189BEE690033D110 /* UIMenuItem+JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A9843A189BEE690033D110 /* UIMenuItem+JavaScriptBridge.m */; };
 		14E28D8A18AD1E220084F84A /* JSBScriptingSupport+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E28D8918AD1E220084F84A /* JSBScriptingSupport+Private.m */; };
 		14E28D8B18AD1E220084F84A /* JSBScriptingSupport+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E28D8918AD1E220084F84A /* JSBScriptingSupport+Private.m */; };
+		A04070D41932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A04070D31932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -974,6 +975,8 @@
 		14A9843A189BEE690033D110 /* UIMenuItem+JavaScriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIMenuItem+JavaScriptBridge.m"; path = "../../../Classes/Private/UIMenuItem+JavaScriptBridge.m"; sourceTree = "<group>"; };
 		14E28D8818AD1E220084F84A /* JSBScriptingSupport+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "JSBScriptingSupport+Private.h"; path = "../../../Classes/Private/JSBScriptingSupport+Private.h"; sourceTree = "<group>"; };
 		14E28D8918AD1E220084F84A /* JSBScriptingSupport+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "JSBScriptingSupport+Private.m"; path = "../../../Classes/Private/JSBScriptingSupport+Private.m"; sourceTree = "<group>"; };
+		A04070D21932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+JavaScriptBridge.h"; path = "../../../Classes/Private/NSNotificationCenter+JavaScriptBridge.h"; sourceTree = "<group>"; };
+		A04070D31932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+JavaScriptBridge.m"; path = "../../../Classes/Private/NSNotificationCenter+JavaScriptBridge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2385,6 +2388,8 @@
 		14A0451A187817F6004831E8 /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				A04070D21932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.h */,
+				A04070D31932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.m */,
 				14E28D8818AD1E220084F84A /* JSBScriptingSupport+Private.h */,
 				14E28D8918AD1E220084F84A /* JSBScriptingSupport+Private.m */,
 				14A04511187817CE004831E8 /* JSBMessageForwarding.h */,
@@ -2574,6 +2579,7 @@
 				149D9F43187595BC00129B4B /* JSBStoreKit.m in Sources */,
 				144884B318AE3EFC008ACFA9 /* JSBSpriteKit.m in Sources */,
 				149D9F3B187595BC00129B4B /* JSBQuickLook.m in Sources */,
+				A04070D41932775C00F0B0D1 /* NSNotificationCenter+JavaScriptBridge.m in Sources */,
 				149D9F21187595BC00129B4B /* JSBFoundation.m in Sources */,
 				149D97A518758BF200129B4B /* JSBScriptingSupport.m in Sources */,
 				149D9F2F187595BC00129B4B /* JSBMessageUI.m in Sources */,

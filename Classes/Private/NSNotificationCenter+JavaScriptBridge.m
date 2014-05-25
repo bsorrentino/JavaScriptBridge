@@ -11,7 +11,7 @@
 @implementation NSNotificationCenter (JavaScriptBridge)
 
 
-- (void)__postNotificationNameInfo:(NSString *)name info:(NSDictionary *)info
+- (void)JSB_postNotificationName:(NSString *)name info:(NSDictionary *)info
 {
     [self postNotificationName:name object:nil userInfo:info];
 }
