@@ -12,18 +12,22 @@
 
 + (instancetype)defaultCenter;
 
-- (instancetype)init;
-- (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject;
-- (void)postNotification:(NSNotification *)notification;
+//- (instancetype)init;
+//- (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject;
+//- (void)postNotification:(NSNotification *)notification;
 //- (void)postNotificationName:(NSString *)aName object:(id)anObject;
 //- (void)postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
 - (void)removeObserver:(id)observer;
-- (void)removeObserver:(id)observer name:(NSString *)aName object:(id)anObject;
-- (id)addObserverForName:(NSString *)name object:(id)obj queue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *note))block;
+//- (void)removeObserver:(id)observer name:(NSString *)aName object:(id)anObject;
+//- (id)addObserverForName:(NSString *)name object:(id)obj queue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *note))block;
 
 JSExportAs(postNotificationName,
            - (void)JSB_postNotificationName:(NSString *)name info:(NSDictionary *)info
            );
+JSExportAs(addObserverForName,
+           - (JSValue*)JSB_addObserverForName:(NSString *)name handler:(JSValue *)handler
+           );
+
 #pragma clang diagnostic pop
 
 @end
