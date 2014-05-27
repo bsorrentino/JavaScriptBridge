@@ -35,12 +35,18 @@
     }
     
     
-    id currentSelf = context[@"self"];
+    __block id currentSelf = context[@"self"];
     
     if (!handler.isUndefined) {
         
         id observer = [self addObserverForName:name object:nil queue:nil usingBlock:^(NSNotification *note) {
-            dispatchFunction(currentSelf, handler, @[note] );
+            //dispatchFunction(currentSelf, handler, @[note] );
+            
+            handler.context[@"self"] = currentSelf;
+            [handler callWithArguments:@[note]];
+            
+            handler.context[@"self"] = nil;
+            
         }];
         
         return [JSValue valueWithObject:observer inContext:context];
@@ -48,5 +54,4 @@
     
     return nil;
 }
-
 @end
