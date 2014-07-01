@@ -13,6 +13,8 @@ extern NSString * const JSBStaticMembersKey;
 
 @import JavaScriptCore;
 
+@class UITableView;
+
 NSString *mangledNameFromClass(Class cls);
 NSString *propertyNameFromSelector(SEL selector);
 
