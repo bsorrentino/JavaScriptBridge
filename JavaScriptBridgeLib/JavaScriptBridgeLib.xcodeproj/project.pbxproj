@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F449D431963140400A912CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F449D421963140400A912CA /* Foundation.framework */; };
-		5F449D481963140400A912CA /* JavaScriptBridgeLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F449D471963140400A912CA /* JavaScriptBridgeLib.h */; };
+		5F449D431963140400A912CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F449D421963140400A912CA /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5F449D511963140400A912CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F449D501963140400A912CA /* XCTest.framework */; };
 		5F449D521963140400A912CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F449D421963140400A912CA /* Foundation.framework */; };
-		5F449D571963140400A912CA /* libJavaScriptBridgeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F449D3F1963140400A912CA /* libJavaScriptBridgeLib.a */; };
+		5F449D571963140400A912CA /* JavaScriptBridgeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F449D3F1963140400A912CA /* JavaScriptBridgeLib.a */; };
 		5F449D5D1963140400A912CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F449D5B1963140400A912CA /* InfoPlist.strings */; };
 		5F449D5F1963140400A912CA /* JavaScriptBridgeLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F449D5E1963140400A912CA /* JavaScriptBridgeLibTests.m */; };
-		5F449D6919631E6A00A912CA /* JavaScriptBridgeLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F449D471963140400A912CA /* JavaScriptBridgeLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F44A07D1963209700A912CA /* NSNotificationCenter+JavaScriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F449D771963209700A912CA /* NSNotificationCenter+JavaScriptBridge.h */; };
 		5F44A07E1963209700A912CA /* NSNotificationCenter+JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F449D781963209700A912CA /* NSNotificationCenter+JavaScriptBridge.m */; };
 		5F44A07F1963209700A912CA /* JSBScriptingSupport+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F449D791963209700A912CA /* JSBScriptingSupport+Private.h */; };
@@ -783,17 +781,15 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5F449D481963140400A912CA /* JavaScriptBridgeLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5F449D3F1963140400A912CA /* libJavaScriptBridgeLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJavaScriptBridgeLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F449D3F1963140400A912CA /* JavaScriptBridgeLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = JavaScriptBridgeLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F449D421963140400A912CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F449D461963140400A912CA /* JavaScriptBridgeLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JavaScriptBridgeLib-Prefix.pch"; sourceTree = "<group>"; };
-		5F449D471963140400A912CA /* JavaScriptBridgeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptBridgeLib.h; sourceTree = "<group>"; };
 		5F449D4F1963140400A912CA /* JavaScriptBridgeLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptBridgeLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F449D501963140400A912CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5F449D5A1963140400A912CA /* JavaScriptBridgeLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JavaScriptBridgeLibTests-Info.plist"; sourceTree = "<group>"; };
@@ -1567,7 +1563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F449D511963140400A912CA /* XCTest.framework in Frameworks */,
-				5F449D571963140400A912CA /* libJavaScriptBridgeLib.a in Frameworks */,
+				5F449D571963140400A912CA /* JavaScriptBridgeLib.a in Frameworks */,
 				5F449D521963140400A912CA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1588,7 +1584,7 @@
 		5F449D401963140400A912CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F449D3F1963140400A912CA /* libJavaScriptBridgeLib.a */,
+				5F449D3F1963140400A912CA /* JavaScriptBridgeLib.a */,
 				5F449D4F1963140400A912CA /* JavaScriptBridgeLibTests.xctest */,
 			);
 			name = Products;
@@ -1610,7 +1606,6 @@
 			isa = PBXGroup;
 			children = (
 				5F449D6A19631FCF00A912CA /* lib */,
-				5F449D471963140400A912CA /* JavaScriptBridgeLib.h */,
 				5F449D451963140400A912CA /* Supporting Files */,
 			);
 			path = JavaScriptBridgeLib;
@@ -2676,27 +2671,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F44A1B41963209700A912CA /* JSBNSIndexSet.h in Headers */,
 				5F44A36E196358B400A912CA /* JavaScriptBridge.h in Headers */,
 				5F44A36F196358B400A912CA /* JSBScriptingSupport.h in Headers */,
 				5F44A372196358B400A912CA /* JSContext+JavaScriptBridge.h in Headers */,
-				5F44A23C1963209800A912CA /* JSBMKDirectionsResponse.h in Headers */,
-				5F44A1E21963209700A912CA /* JSBNSProgress.h in Headers */,
-				5F44A2E71963209800A912CA /* JSBUIActivityViewController.h in Headers */,
-				5F44A1FD1963209700A912CA /* JSBNSURLResponse.h in Headers */,
-				5F44A28F1963209800A912CA /* JSBCABasicAnimation.h in Headers */,
-				5F44A2D21963209800A912CA /* JSBSKRequest.h in Headers */,
-				5F44A1B11963209700A912CA /* JSBNSHTTPURLResponse.h in Headers */,
-				5F44A3141963209800A912CA /* JSBUILocalizedIndexedCollation.h in Headers */,
-				5F44A1951963209700A912CA /* JSBNSComparisonPredicate.h in Headers */,
-				5F44A1F51963209700A912CA /* JSBNSURLCache.h in Headers */,
-				5F44A1A91963209700A912CA /* JSBNSFileHandle.h in Headers */,
-				5F44A2711963209800A912CA /* JSBMPMoviePlayerViewController.h in Headers */,
-				5F44A3271963209800A912CA /* JSBUIPopoverBackgroundView.h in Headers */,
-				5F44A2D81963209800A912CA /* JSBNSMutableParagraphStyle.h in Headers */,
-				5F44A17E1963209700A912CA /* JSBEKReminder.h in Headers */,
-				5F44A2551963209800A912CA /* JSBMKPolylineRenderer.h in Headers */,
-				5F44A2031963209700A912CA /* JSBNSURLSessionUploadTask.h in Headers */,
 				5F44A2BE1963209800A912CA /* JSBSKPhysicsWorld.h in Headers */,
 				5F44A20C1963209700A912CA /* JSBGKAchievementChallenge.h in Headers */,
 				5F44A1AA1963209700A912CA /* JSBNSFileManager.h in Headers */,
@@ -2746,6 +2723,23 @@
 				5F44A07F1963209700A912CA /* JSBScriptingSupport+Private.h in Headers */,
 				5F44A2091963209700A912CA /* JSBNSValueTransformer.h in Headers */,
 				5F44A2A51963209800A912CA /* JSBQLPreviewController.h in Headers */,
+				5F44A1B41963209700A912CA /* JSBNSIndexSet.h in Headers */,
+				5F44A23C1963209800A912CA /* JSBMKDirectionsResponse.h in Headers */,
+				5F44A1E21963209700A912CA /* JSBNSProgress.h in Headers */,
+				5F44A2E71963209800A912CA /* JSBUIActivityViewController.h in Headers */,
+				5F44A1FD1963209700A912CA /* JSBNSURLResponse.h in Headers */,
+				5F44A28F1963209800A912CA /* JSBCABasicAnimation.h in Headers */,
+				5F44A2D21963209800A912CA /* JSBSKRequest.h in Headers */,
+				5F44A1B11963209700A912CA /* JSBNSHTTPURLResponse.h in Headers */,
+				5F44A3141963209800A912CA /* JSBUILocalizedIndexedCollation.h in Headers */,
+				5F44A1951963209700A912CA /* JSBNSComparisonPredicate.h in Headers */,
+				5F44A1F51963209700A912CA /* JSBNSURLCache.h in Headers */,
+				5F44A1A91963209700A912CA /* JSBNSFileHandle.h in Headers */,
+				5F44A2711963209800A912CA /* JSBMPMoviePlayerViewController.h in Headers */,
+				5F44A3271963209800A912CA /* JSBUIPopoverBackgroundView.h in Headers */,
+				5F44A2D81963209800A912CA /* JSBNSMutableParagraphStyle.h in Headers */,
+				5F44A17E1963209700A912CA /* JSBEKReminder.h in Headers */,
+				5F44A2551963209800A912CA /* JSBMKPolylineRenderer.h in Headers */,
 				5F44A20B1963209700A912CA /* JSBGKAchievement.h in Headers */,
 				5F44A1361963209700A912CA /* JSBNSIncrementalStoreNode.h in Headers */,
 				5F44A2921963209800A912CA /* JSBCAEmitterBehavior.h in Headers */,
@@ -2763,7 +2757,6 @@
 				5F44A30C1963209800A912CA /* JSBUIImageView.h in Headers */,
 				5F44A2611963209800A912CA /* JSBMPMediaEntity.h in Headers */,
 				5F44A0D21963209700A912CA /* JSBAVAudioMixInputParameters.h in Headers */,
-				5F449D6919631E6A00A912CA /* JavaScriptBridgeLib.h in Headers */,
 				5F44A0C61963209700A912CA /* JSBAVAssetResourceLoadingContentInformationRequest.h in Headers */,
 				5F44A3261963209800A912CA /* JSBUIPinchGestureRecognizer.h in Headers */,
 				5F44A0E11963209700A912CA /* JSBAVCaptureInput.h in Headers */,
@@ -2825,6 +2818,7 @@
 				5F44A0C51963209700A912CA /* JSBAVAssetResourceLoader.h in Headers */,
 				5F44A11A1963209700A912CA /* JSBCBATTRequest.h in Headers */,
 				5F44A1161963209700A912CA /* JSBAVVideoCompositionCoreAnimationTool.h in Headers */,
+				5F44A2031963209700A912CA /* JSBNSURLSessionUploadTask.h in Headers */,
 				5F44A1751963209700A912CA /* JSBEKCalendar.h in Headers */,
 				5F44A2651963209800A912CA /* JSBMPMediaLibrary.h in Headers */,
 				5F44A11E1963209700A912CA /* JSBCBDescriptor.h in Headers */,
@@ -3390,7 +3384,7 @@
 			);
 			name = JavaScriptBridgeLib;
 			productName = JavaScriptBridgeLib;
-			productReference = 5F449D3F1963140400A912CA /* libJavaScriptBridgeLib.a */;
+			productReference = 5F449D3F1963140400A912CA /* JavaScriptBridgeLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5F449D4E1963140400A912CA /* JavaScriptBridgeLibTests */ = {
@@ -3636,6 +3630,7 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/JavaScriptBridgeLib.dst;
+				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JavaScriptBridgeLib/JavaScriptBridgeLib-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -3651,6 +3646,7 @@
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/JavaScriptBridgeLib.dst;
+				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JavaScriptBridgeLib/JavaScriptBridgeLib-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -3716,6 +3712,7 @@
 				5F449D641963140400A912CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F449D651963140400A912CA /* Build configuration list for PBXNativeTarget "JavaScriptBridgeLibTests" */ = {
 			isa = XCConfigurationList;
@@ -3724,6 +3721,7 @@
 				5F449D671963140400A912CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

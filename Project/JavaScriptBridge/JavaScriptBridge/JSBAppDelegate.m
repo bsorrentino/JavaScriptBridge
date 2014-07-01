@@ -7,7 +7,7 @@
 //
 
 #import "JSBAppDelegate.h"
-#import "JavaScriptBridge.h"
+#import <JavaScriptBridgeLib/JavaScriptBridge.h>
 
 @implementation JSBAppDelegate
 

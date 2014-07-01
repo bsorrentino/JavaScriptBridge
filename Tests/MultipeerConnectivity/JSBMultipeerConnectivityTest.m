@@ -1,5 +1,5 @@
 #import <XCTest/XCTest.h>
-#import "JavaScriptBridge.h"
+#import <JavaScriptBridgeLib/JavaScriptBridge.h>
 
 @import JavaScriptCore;
 
