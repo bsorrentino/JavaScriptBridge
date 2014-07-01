@@ -759,7 +759,7 @@
 		5F44A36E196358B400A912CA /* JavaScriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F44A368196358B400A912CA /* JavaScriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F44A36F196358B400A912CA /* JSBScriptingSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F44A369196358B400A912CA /* JSBScriptingSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F44A370196358B400A912CA /* JSBScriptingSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F44A36A196358B400A912CA /* JSBScriptingSupport.m */; };
-		5F44A371196358B400A912CA /* JSBNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F44A36B196358B400A912CA /* JSBNSObject.h */; };
+		5F44A371196358B400A912CA /* JSBNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F44A36B196358B400A912CA /* JSBNSObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5F44A372196358B400A912CA /* JSContext+JavaScriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F44A36C196358B400A912CA /* JSContext+JavaScriptBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F44A373196358B400A912CA /* JSContext+JavaScriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F44A36D196358B400A912CA /* JSContext+JavaScriptBridge.m */; };
 /* End PBXBuildFile section */
@@ -2674,6 +2674,7 @@
 				5F44A36E196358B400A912CA /* JavaScriptBridge.h in Headers */,
 				5F44A36F196358B400A912CA /* JSBScriptingSupport.h in Headers */,
 				5F44A372196358B400A912CA /* JSContext+JavaScriptBridge.h in Headers */,
+				5F44A371196358B400A912CA /* JSBNSObject.h in Headers */,
 				5F44A2BE1963209800A912CA /* JSBSKPhysicsWorld.h in Headers */,
 				5F44A20C1963209700A912CA /* JSBGKAchievementChallenge.h in Headers */,
 				5F44A1AA1963209700A912CA /* JSBNSFileManager.h in Headers */,
@@ -3262,7 +3263,6 @@
 				5F44A2951963209800A912CA /* JSBCAGradientLayer.h in Headers */,
 				5F44A3531963209800A912CA /* JSBUITextSelectionRect.h in Headers */,
 				5F44A31B1963209800A912CA /* JSBUIMotionEffectGroup.h in Headers */,
-				5F44A371196358B400A912CA /* JSBNSObject.h in Headers */,
 				5F44A1011963209700A912CA /* JSBAVPlayer.h in Headers */,
 				5F44A1EB1963209700A912CA /* JSBNSSimpleCString.h in Headers */,
 				5F44A3591963209800A912CA /* JSBUIViewController.h in Headers */,

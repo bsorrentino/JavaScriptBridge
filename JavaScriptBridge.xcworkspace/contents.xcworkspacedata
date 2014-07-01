@@ -5,9 +5,6 @@
       location = "container:"
       name = "Lib">
       <FileRef
-         location = "group:JavaScriptBridgeLib/JavaScriptBridgeLib.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:JavaScriptBridge.podspec">
       </FileRef>
       <FileRef
