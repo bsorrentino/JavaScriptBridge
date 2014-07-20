@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     #core.private_header_files  = ["Classes/Private/*.{h,m}"]
     #core.exclude_files = non_arc_files
     #core.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
-    core.dependency 'JavaScriptBridge/Private'
+    core.dependency 'JavaScriptBridgeLib/Private'
     #core.dependency 'SAMTextView', '~> 0.2.1'
     #core.dependency 'ShareKit/Reachability'
     #core.dependency 'ShareKit/NoARC'
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     #foundation.private_header_files  = ["Classes/Private/*.{h,m}"]
     #foundation.exclude_files = non_arc_files
     #foundation.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
-    foundation.dependency 'JavaScriptBridge/Core'
+    foundation.dependency 'JavaScriptBridgeLib/Core'
     #foundation.dependency 'SAMTextView', '~> 0.2.1'
     #foundation.dependency 'ShareKit/Reachability'
     #foundation.dependency 'ShareKit/NoARC'
@@ -52,8 +52,8 @@ Pod::Spec.new do |s|
     #uikit.private_header_files  = ["Classes/Private/*.{h,m}"]
     #uikit.exclude_files = non_arc_files
     #uikit.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
-    uikit.dependency 'JavaScriptBridge/Core'
-    uikit.dependency 'JavaScriptBridge/Foundation'
+    uikit.dependency 'JavaScriptBridgeLib/Core'
+    uikit.dependency 'JavaScriptBridgeLib/Foundation'
     #uikit.dependency 'ShareKit/Reachability'
     #uikit.dependency 'ShareKit/NoARC'
    end
@@ -64,8 +64,8 @@ Pod::Spec.new do |s|
     #quartzcore.private_header_files  = ["Classes/Private/*.{h,m}"]
     #quartzcore.exclude_files = non_arc_files
     #quartzcore.frameworks    = 'SystemConfiguration', 'Security', 'MessageUI', "AVFoundation", "MobileCoreServices", "CoreMedia", "Social"
-    quartzcore.dependency 'JavaScriptBridge/Core'
-    quartzcore.dependency 'JavaScriptBridge/Foundation'
+    quartzcore.dependency 'JavaScriptBridgeLib/Core'
+    quartzcore.dependency 'JavaScriptBridgeLib/Foundation'
     #quartzcore.dependency 'ShareKit/Reachability'
     #quartzcore.dependency 'ShareKit/NoARC'
    end
