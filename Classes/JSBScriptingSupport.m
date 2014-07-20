@@ -121,14 +121,15 @@ static loadRequireContentBlock _globalRequireLoadStategyBlock = nil;
 {
     JSValue *module = nil;
     
-    NSString *script;
+    NSString *script = nil;
     
     if( _globalRequireLoadStategyBlock ) {
 
         script = _globalRequireLoadStategyBlock( name );
         
     }
-    else {
+    
+    if( !script ) {
 
         NSBundle *mainBundle = [NSBundle mainBundle];
         NSString *path = [mainBundle pathForResource:name ofType:@"js"];
