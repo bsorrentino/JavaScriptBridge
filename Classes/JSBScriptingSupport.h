@@ -35,8 +35,12 @@ JSExportAs(dump,
 
 @end
 
+typedef NSString * (^loadRequireContentBlock)( NSString * );
+
 @interface JSBScriptingSupport : NSObject <JSBScriptingSupport>
 
 + (JSContext *)globalContext;
+
++ (void)setRequireLoadStrategy:(loadRequireContentBlock)block;
 
 @end

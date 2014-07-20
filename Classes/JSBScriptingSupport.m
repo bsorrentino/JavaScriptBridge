@@ -14,6 +14,8 @@
 
 @import ObjectiveC;
 
+static loadRequireContentBlock _globalRequireLoadStategyBlock = nil;
+
 @implementation JSBScriptingSupport
 
 + (JSContext *)globalContext
@@ -33,6 +35,15 @@
     });
     
     return globalContext;
+}
+
++ (void)setRequireLoadStrategy:(loadRequireContentBlock)block
+{
+    if( block ) {
+    
+        _globalRequireLoadStategyBlock = [block copy];
+    }
+    
 }
 
 #pragma mark -
@@ -110,13 +121,25 @@
 {
     JSValue *module = nil;
     
-    NSBundle *mainBundle = [NSBundle mainBundle];
-    NSString *path = [mainBundle pathForResource:name ofType:@"js"];
+    NSString *script;
     
-    NSString *script = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    if (!script) {
-        script = [NSString stringWithContentsOfFile:[name stringByAppendingPathExtension:@"js"] encoding:NSUTF8StringEncoding error:nil];
+    if( _globalRequireLoadStategyBlock ) {
+
+        script = _globalRequireLoadStategyBlock( name );
+        
     }
+    else {
+
+        NSBundle *mainBundle = [NSBundle mainBundle];
+        NSString *path = [mainBundle pathForResource:name ofType:@"js"];
+     
+        script = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+        if (!script) {
+            script = [NSString stringWithContentsOfFile:[name stringByAppendingPathExtension:@"js"] encoding:NSUTF8StringEncoding error:nil];
+        }
+    }
+    
+    
     if (script) {
         JSContext *context = [self currentContext];
         
